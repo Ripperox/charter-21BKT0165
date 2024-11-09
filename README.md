@@ -54,7 +54,7 @@ This project is a decentralized application (DApp) designed to verify the inclus
    Inside the `backend` folder, create a `.env` file with the following content:
    ```plaintext
    SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/6bb44e63456344d1b70bc87e435ad0d5
-   PRIVATE_KEY=eb56b58c9a85d2b1eb56d04c89aa72de592a69b2193666be4f91273216a3c3a6
+   PRIVATE_KEY=YOUR_PRIVATE_WALLET_KEY
    ```
 
 4. **Deploy the Smart Contract**:
@@ -76,7 +76,7 @@ This project is a decentralized application (DApp) designed to verify the inclus
    Inside the `frontend` folder, create a `.env` file with the following content:
    ```plaintext
    REACT_APP_INFURA_URL=https://sepolia.infura.io/v3/6bb44e63456344d1b70bc87e435ad0d5
-   REACT_APP_PRIVATE_KEY=eb56b58c9a85d2b1eb56d04c89aa72de592a69b2193666be4f91273216a3c3a6
+   REACT_APP_PRIVATE_KEY=YOUR_PRIVATE_WALLET_KEY
    ```
 
 7. **Update Contract Address and ABI**:
