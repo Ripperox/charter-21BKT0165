@@ -1,3 +1,4 @@
+
 ---
 
 # Merkle Proof Verification DApp
@@ -49,7 +50,14 @@ This project is a decentralized application (DApp) designed to verify the inclus
    npm install
    ```
 
-3. **Deploy the Smart Contract**:
+3. **Create a `.env` File in Backend**:
+   Inside the `backend` folder, create a `.env` file with the following content:
+   ```plaintext
+   SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/6bb44e63456344d1b70bc87e435ad0d5
+   PRIVATE_KEY=eb56b58c9a85d2b1eb56d04c89aa72de592a69b2193666be4f91273216a3c3a6
+   ```
+
+4. **Deploy the Smart Contract**:
    - Configure your Hardhat environment and deploy the contract to your desired network.
    - Update the contract address in the frontend code after deployment.
    ```bash
@@ -57,17 +65,24 @@ This project is a decentralized application (DApp) designed to verify the inclus
    npx hardhat run scripts/deploy.js --network <network>
    ```
 
-4. **Install Frontend Dependencies**:
+5. **Install Frontend Dependencies**:
    Navigate to the `frontend` folder and install dependencies:
    ```bash
    cd ../frontend
    npm install
    ```
 
-5. **Update Contract Address and ABI**:
+6. **Create a `.env` File in Frontend**:
+   Inside the `frontend` folder, create a `.env` file with the following content:
+   ```plaintext
+   REACT_APP_INFURA_URL=https://sepolia.infura.io/v3/6bb44e63456344d1b70bc87e435ad0d5
+   REACT_APP_PRIVATE_KEY=eb56b58c9a85d2b1eb56d04c89aa72de592a69b2193666be4f91273216a3c3a6
+   ```
+
+7. **Update Contract Address and ABI**:
    In `frontend/src/App.js`, update `contractAddress` and `contractABI` with the deployed contract details.
 
-6. **Start the Development Server**:
+8. **Start the Development Server**:
    Run the frontend React app:
    ```bash
    npm start
@@ -94,4 +109,5 @@ The Solidity smart contract is designed to store a Merkle root and verify transa
 
 This project is licensed under the MIT License.
 
----
+--- 
+
