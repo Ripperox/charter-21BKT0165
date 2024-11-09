@@ -1,0 +1,136 @@
+/* Reset default margins and padding for a consistent base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a smooth background gradient for the whole pageee*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #ecf0f1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Main container */
+.App {
+  max-width: 800px;
+  width: 100%;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ecf0f1;
+  font-weight: 700;
+}
+
+/* Buttons */
+button {
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Account information display */
+.account-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Input sections */
+.input-section {
+  margin-top: 20px;
+  background-color: #34495e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ecf0f1;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #7f8c8d;
+  margin-top: 5px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Result display */
+.result {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.result.valid {
+  color: #2ecc71;
+}
+
+.result.invalid {
+  color: #e74c3c;
+}
+
+/* Connect button */
+.connect-button {
+  background-color: #e67e22;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #d35400;
+}
+
+/* Add some padding to the overall container */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
